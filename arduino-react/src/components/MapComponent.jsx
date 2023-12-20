@@ -9,10 +9,6 @@ mapboxgl.accessToken =
 const MapComponent = ({ data, fetchData }) => {
   const { longitude, latitude } = data;
 
-  useEffect(() => {
-    initializeMap(longitude, latitude);
-  }, [fetchData]);
-
   const initializeMap = (longitude, latitude) => {
     const map = new mapboxgl.Map({
       container: "map-container",
@@ -27,6 +23,10 @@ const MapComponent = ({ data, fetchData }) => {
     new mapboxgl.Marker().setLngLat([longitude, latitude]).addTo(map);
   };
 
+  useEffect(() => {
+    initializeMap(longitude, latitude);
+  }, [fetchData]);
+  
   return (
     <div
       style={{
@@ -65,7 +65,7 @@ const MapComponent = ({ data, fetchData }) => {
         <Text fw={500} size="lg">
           Longitude: {longitude}
         </Text>
-        <Text fw={500} size="lg" >
+        <Text fw={500} size="lg">
           Latitude: {latitude}
         </Text>
         <Button onClick={fetchData} color="orange" size="md" radius="md">

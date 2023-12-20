@@ -2,7 +2,6 @@
   "name": "arduino",
   "version": "0.1.0",
   "private": true,
-<<<<<<< HEAD
   "dependencies": {
     "@mantine/carousel": "^7.3.2",
     "@mantine/code-highlight": "^7.3.2",
@@ -24,16 +23,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
-=======
-  "proxy": "http://127.0.0.1:5000/",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "mapbox-gl": "^3.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
->>>>>>> 612350d5433bd21565516cf432300dc3ecbf85a0
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
