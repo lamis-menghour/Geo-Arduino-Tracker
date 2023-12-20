@@ -2,53 +2,6 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
 =======
-# # from flask import Flask
-
-# # app = Flask(__name__)
-
-# # @app.route("/")
-
-# # # def sensor():
-# # #     return {"sensor_value" : sensor_value}
-# # def home():
-# #     return 'Hello, World!'
-
-# # if __name__ == "__main__":
-# #     app.run(debug=True)
-
-# # -------------------------
-# from flask import Flask, jsonify
-# from threading import Thread
-# import time
-
-# app = Flask(__name__)
-
-# # Function to periodically update sensor_value from Arduino
-# def update_sensor_value():
-#     while True:
-#         with open('sensor_value.txt', 'r') as file:
-#             sensor_value = file.read().strip()
-#             file.close()
-#         time.sleep(0.5)
-
-# # Start the update_sensor_value function in a separate thread
-# update_thread = Thread(target=update_sensor_value)
-# update_thread.start()
-
-# @app.route("/sensor")
-# def sensor():
-#     # Return the latest sensor_value 
-#     with open('sensor_value.txt', 'r') as file:
-#         sensor_value = file.read().strip()
-#         file.close()
-#     # return jsonify({"sensor_value": sensor_value})
-#     return sensor_value
-
-# if __name__ == "__main__":
-#     app.run(debug=True)
-
-# --------------------------------------------------------------------------------
-from flask import Flask, jsonify
 >>>>>>> 612350d5433bd21565516cf432300dc3ecbf85a0
 from threading import Thread
 import json
