@@ -1,7 +1,8 @@
 # Geo-Arduino-Tracker
 
 Objective: 
-Develop a straightforward system to read and display sensor data from an Arduino board. The system allows for the immediate presentation of sensor data. The Arduino consistently reads data from the sensor, Python manages communication with the Arduino, and Flask delivers this data to the React frontend for display. 
+This project builds a simple system to track the real-time location of an Arduino board equipped with a NEO-6M GPS module. GPS data is streamed and automatically visualized on a map website, offering instant insight into the tracked object's position.
+The Arduino consistently reads data from the sensor, Python manages communication with the Arduino, and Flask delivers this data to the React frontend for display. 
 
 Details:
 
